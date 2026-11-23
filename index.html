@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متتبع المواد الدراسية</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <script src="https://jsdelivr.net"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🎓 سجل المواد الدراسية</h1>
+        <p>ضع إشارة (✓) عند إتمام المادة واكتب علامتك</p>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="stats">
+            <span id="completedCount">المواد المنجزة: 0 / 12</span>
+            <span id="averageGrade">المعدل: 0</span>
+        </div>
+    </header>
+
+    <div class="subjects-list">
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">جبر خطي</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">جبر لا خطي</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">فيزياء كهربائية</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">أنصاف نواقل</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">تحليل ١</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">تحليل ٢</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">إنكليزي ١</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">إنكليزي ٢</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">برمجة ١</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">برمجة ٢</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">مبادئ</span></label>
+ <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+        <div class="subject-item">
+            <label class="subject-info"><input type="checkbox"><span class="subject-name">لغة عربية</span></label>
+            <div class="grade-box"><input type="number" class="grade-input" placeholder="العلامة" min="0" max="100"></div>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toastMessage">أحسنت! خطوة رائعة نحو التخرج 🚀</div>
+
+<script src="script.js"></script>
+</body>
+</html>
